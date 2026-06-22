@@ -47,8 +47,34 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "JSON Vision",
+    "url": "https://jsonvision.vercel.app",
+    "description": "A powerful JSON visualization tool with tree and graph views, path extraction, JSONPath queries, and real-time validation.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "All",
+    "creator": {
+      "@type": "Person",
+      "name": "Hardik Joshi",
+      "url": "https://github.com/ReachOutToHardik"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )

@@ -26,7 +26,8 @@ import {
   Code2,
   Upload,
   Folder,
-  Linkedin
+  Linkedin,
+  Target
 } from 'lucide-react';
 
 // --- UTILS: Graph Layout Logic ---
@@ -1310,9 +1311,9 @@ export default function JsonVisualizer() {
                 <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent font-semibold">Made with ❤️ by Hardik Joshi</span>
               </div>
               <div className="flex items-center space-x-6 text-sm text-slate-400">
-                <a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-blue-400 transition-colors">Terms of Service</a>
-                <a href="#" className="hover:text-blue-400 transition-colors">License</a>
+                <a href="/about" className="hover:text-blue-400 transition-colors">About Us</a>
+                <a href="/privacy" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
+                <a href="/terms" className="hover:text-blue-400 transition-colors">Terms of Service</a>
               </div>
             </div>
           </div>
