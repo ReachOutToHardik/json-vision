@@ -26,9 +26,6 @@ import {
   Code2,
   Upload,
   Folder,
-  Target,
-  Instagram,
-  InstagramIcon,
   Linkedin
 } from 'lucide-react';
 
