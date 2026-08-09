@@ -1340,7 +1340,7 @@ export default function JsonVisualizer() {
                 <div className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-xl space-y-2">
                   <h4 className="font-semibold text-white text-base">How do I extract a specific JSON key path?</h4>
                   <p className="text-slate-400 text-sm leading-relaxed">
-                    In JSON Vision's Tree View, simply click on any node or key label. The exact JavaScript path (e.g., <code className="text-blue-300">data.users[0].profile.email</code>) will be copied to your clipboard instantly.
+                    In JSON Vision&apos;s Tree View, simply click on any node or key label. The exact JavaScript path (e.g., <code className="text-blue-300">data.users[0].profile.email</code>) will be copied to your clipboard instantly.
                   </p>
                 </div>
 
