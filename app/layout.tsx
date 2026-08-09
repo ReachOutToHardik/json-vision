@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://jsonvision.vercel.app'),
+  metadataBase: new URL('https://json-vision.vercel.app'),
   title: {
     default: 'JSON Vision - Visualize & Extract Paths',
     template: '%s | JSON Vision',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://jsonvision.vercel.app',
+    url: 'https://json-vision.vercel.app',
     title: 'JSON Vision - Visualize & Extract Paths',
     description: 'A powerful JSON visualization tool with tree and graph views, path extraction, and real-time validation',
     siteName: 'JSON Vision',
@@ -54,7 +54,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "JSON Vision",
-    "url": "https://jsonvision.vercel.app",
+    "url": "https://json-vision.vercel.app",
     "description": "A powerful JSON visualization tool with tree and graph views, path extraction, JSONPath queries, and real-time validation.",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "All",

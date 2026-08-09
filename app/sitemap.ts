@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://jsonvision.vercel.app';
+  const baseUrl = 'https://json-vision.vercel.app';
   return [
     {
       url: baseUrl,

@@ -1054,7 +1054,7 @@ export default function JsonVisualizer() {
                     </div>
                     <div className="text-sm">
                       <div className="font-bold text-white">JSON Vision</div>
-                      <div className="text-[10px] text-slate-400">jsonvision.vercel.app</div>
+                      <div className="text-[10px] text-slate-400">json-vision.vercel.app</div>
                     </div>
                   </div>
                 </div>

@@ -38,7 +38,7 @@ export default function TermsOfService() {
 
         {/* Introduction */}
         <p className="text-slate-300 leading-relaxed">
-          Welcome to JSON Vision. By accessing or using our developer utility at [jsonvision.vercel.app](https://jsonvision.vercel.app), you agree to comply with and be bound by the following Terms of Service.
+          Welcome to JSON Vision. By accessing or using our developer utility at [json-vision.vercel.app](https://json-vision.vercel.app), you agree to comply with and be bound by the following Terms of Service.
         </p>
 
         {/* Detailed Sections */}
