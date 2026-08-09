@@ -1206,6 +1206,163 @@ export default function JsonVisualizer() {
           </div>
         </div>
 
+        {/* SEO Theory & Developer Guide Section */}
+        <section className="border-t border-slate-800 bg-slate-950/60 py-16 px-6">
+          <div className="max-w-6xl mx-auto space-y-16">
+
+            {/* Section 1: Comprehensive Guide to JSON & Visualization */}
+            <div className="space-y-6">
+              <div className="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full text-xs text-blue-400 font-medium">
+                <Braces size={14} />
+                <span>Developer Guide & Documentation</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                Understanding JSON Visualization, Tree Hierarchy, and Graph Analysis
+              </h2>
+              <p className="text-slate-300 leading-relaxed text-base md:text-lg">
+                JavaScript Object Notation (<strong>JSON</strong>) is the universal data-interchange format across modern web APIs, microservices, database storage (PostgreSQL JSONB, MongoDB BSON), and cloud configurations. As systems scale, JSON payloads become deeply nested, contain complex arrays of objects, and grow to thousands of lines—making raw text unreadable.
+              </p>
+              <p className="text-slate-300 leading-relaxed text-base">
+                <strong>JSON Vision</strong> solves this developer bottleneck by providing interactive, instant visual parsing. Transform unformatted or compressed JSON strings into color-coded <strong>Hierarchical Tree Views</strong>, dynamic <strong>Interactive Node-Graph Diagrams</strong>, and perform real-time <strong>JSONPath queries</strong> directly in your browser.
+              </p>
+            </div>
+
+            {/* Section 2: Deep Dive Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              
+              <div className="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl space-y-4 hover:border-blue-500/40 transition-all">
+                <div className="bg-blue-500/10 p-3 rounded-xl w-fit text-blue-400">
+                  <Eye size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-white">Interactive Tree View</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Navigate objects with collapsible node blocks, data-type badges (String, Number, Boolean, Null, Array, Object), array index counters, and path click-to-copy capabilities. Ideal for inspecting REST responses, GraphQL schemas, and nested API structures.
+                </p>
+              </div>
+
+              <div className="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl space-y-4 hover:border-purple-500/40 transition-all">
+                <div className="bg-purple-500/10 p-3 rounded-xl w-fit text-purple-400">
+                  <Network size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-white">Visual Node-Graph Mode</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Map hierarchical entity-relationship models using a visual node-and-edge layout. Drag, zoom, and pan across child nodes to visually trace data flow across complex relational objects and array dependencies.
+                </p>
+              </div>
+
+              <div className="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl space-y-4 hover:border-emerald-500/40 transition-all">
+                <div className="bg-emerald-500/10 p-3 rounded-xl w-fit text-emerald-400">
+                  <Search size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-white">JSONPath & Path Extraction</h3>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Execute custom <strong>JSONPath queries</strong> (e.g. <code className="text-emerald-300 bg-slate-950 px-1 py-0.5 rounded">$..email</code> or <code className="text-emerald-300 bg-slate-950 px-1 py-0.5 rounded">$.users[*]</code>) to extract specific sub-trees. Click any node to instantly grab its exact dot-notation JavaScript accessor path.
+                </p>
+              </div>
+
+            </div>
+
+            {/* Section 3: Technical Comparison Table (Tree vs Graph vs Text) */}
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-white">Tree View vs Graph View vs Raw Formatting</h3>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                Choosing the right view mode depends on your debugging goal. Here is a quick technical comparison:
+              </p>
+
+              <div className="overflow-x-auto border border-slate-800 rounded-xl bg-slate-900/40">
+                <table className="w-full text-left text-sm text-slate-300">
+                  <thead className="bg-slate-900 text-slate-200 border-b border-slate-800 uppercase text-xs tracking-wider">
+                    <tr>
+                      <th className="px-6 py-4 font-semibold">Feature / View Mode</th>
+                      <th className="px-6 py-4 font-semibold text-blue-400">Tree View Mode</th>
+                      <th className="px-6 py-4 font-semibold text-purple-400">Graph View Mode</th>
+                      <th className="px-6 py-4 font-semibold text-emerald-400">Raw Formatter</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-slate-800/60">
+                    <tr>
+                      <td className="px-6 py-4 font-medium text-white">Best Use Case</td>
+                      <td className="px-6 py-4">API response inspection & deep key lookup</td>
+                      <td className="px-6 py-4">Relational mapping & schema visualization</td>
+                      <td className="px-6 py-4">Syntax validation & file export</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 font-medium text-white">Interaction Level</td>
+                      <td className="px-6 py-4">Expand/collapse, copy paths, search filter</td>
+                      <td className="px-6 py-4">Pan, zoom, drag nodes, connection lines</td>
+                      <td className="px-6 py-4">Text copy, indentation adjustment</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 font-medium text-white">Data Type Identification</td>
+                      <td className="px-6 py-4">Color-coded badge & value formatting</td>
+                      <td className="px-6 py-4">Node badges & child count pill</td>
+                      <td className="px-6 py-4">Standard JSON syntax highlighting</td>
+                    </tr>
+                    <tr>
+                      <td className="px-6 py-4 font-medium text-white">Privacy Guarantee</td>
+                      <td className="px-6 py-4 text-emerald-400 font-semibold">100% In-Browser</td>
+                      <td className="px-6 py-4 text-emerald-400 font-semibold">100% In-Browser</td>
+                      <td className="px-6 py-4 text-emerald-400 font-semibold">100% In-Browser</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Section 4: Security & Privacy Guarantee */}
+            <div className="bg-gradient-to-r from-blue-950/30 via-slate-900 to-purple-950/30 border border-slate-800 rounded-2xl p-8 space-y-4">
+              <div className="flex items-center space-x-3">
+                <div className="bg-emerald-500/10 p-2.5 rounded-lg text-emerald-400">
+                  <Zap size={20} />
+                </div>
+                <h3 className="text-xl font-bold text-white">Client-Side Privacy & Data Security</h3>
+              </div>
+              <p className="text-slate-300 text-sm leading-relaxed">
+                Security is paramount when dealing with API tokens, user data, environment variables, or database payloads. Unlike server-based JSON formatters, <strong>JSON Vision executes all parsing, linting, tree construction, and SVG graph rendering 100% client-side in your local browser sandbox</strong>. No data is sent to external servers or stored remotely.
+              </p>
+            </div>
+
+            {/* Section 5: Frequently Asked Questions (FAQ) for Search Engines */}
+            <div className="space-y-8">
+              <div className="space-y-2">
+                <h3 className="text-2xl font-bold text-white">Frequently Asked Questions (FAQ)</h3>
+                <p className="text-slate-400 text-sm">Common questions about JSON formatting, validation, and visual path extraction.</p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-xl space-y-2">
+                  <h4 className="font-semibold text-white text-base">What is a JSON Visualizer?</h4>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    A JSON visualizer is a tool that converts raw, unformatted, or minified JSON text into structured visual formats like collapsible trees and node graphs, allowing developers to analyze complex data structures effortlessly.
+                  </p>
+                </div>
+
+                <div className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-xl space-y-2">
+                  <h4 className="font-semibold text-white text-base">How do I extract a specific JSON key path?</h4>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    In JSON Vision's Tree View, simply click on any node or key label. The exact JavaScript path (e.g., <code className="text-blue-300">data.users[0].profile.email</code>) will be copied to your clipboard instantly.
+                  </p>
+                </div>
+
+                <div className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-xl space-y-2">
+                  <h4 className="font-semibold text-white text-base">Is my JSON data uploaded or stored anywhere?</h4>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    No. JSON Vision processes all data strictly within your web browser. Nothing leaves your device, making it safe for production keys, credentials, and sensitive configurations.
+                  </p>
+                </div>
+
+                <div className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-xl space-y-2">
+                  <h4 className="font-semibold text-white text-base">What is JSONPath and how does it query JSON?</h4>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    JSONPath is a query expression syntax for JSON (similar to XPath for XML). It allows developers to select and extract specific nodes or arrays from a JSON document using patterns like <code className="text-purple-300">$.store.book[*]</code>.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
         {/* Main Footer Content */}
         <div className="max-w-7xl mx-auto px-6 py-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
